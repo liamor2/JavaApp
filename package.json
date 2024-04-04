@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "openai": "^4.0.0"
+  },
+  "name": "javaapp",
+  "description": "Node serer for storytelling app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamor2/JavaApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liamor2/JavaApp/issues"
+  },
+  "homepage": "https://github.com/liamor2/JavaApp#readme"
+}
