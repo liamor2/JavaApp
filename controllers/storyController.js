@@ -1,5 +1,7 @@
 import OpenAI from "openai";
 import dotenv from "dotenv";
+import lang from "../lang/promptLang.json" assert { type: "json" };
+
 dotenv.config();
 
 
@@ -8,23 +10,12 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const complexStoryRequest = async (req, res) => {
     try{
-        console.log(req)
-    const storyParams = req.body;
-    console.log(storyParams);
-    const prompt = `
-        Génére une histoire pour enfants suivant les critères suivants: \n
-        Longueur: ${storyParams.longueur}\n
-        Âge du public cible: ${storyParams.ageCible} ans\n
-        Genre de l'histoire: ${storyParams.themeHistoire}\n
-        Personnage principal: ${storyParams.persoP.nom}, ${storyParams.persoP.age
-        } ans, ${storyParams.persoP.personnalite}, ${storyParams.persoP.genre}\n
-        Problème ou défi à surmonter: ${storyParams.defi}\n
-        Leçon ou morale: ${storyParams.morale}\n
-        Éléments supplémentaires:\n
-        - Objets magiques: ${storyParams.elementsSupp.objets.join(", ")}\n
-        - Rencontres extraordinaires: ${storyParams.elementsSupp.rencontres.join(
-            ", "
-        )}`;
+        // console.log(req)
+        const storyParams = req.body;
+        const language = lang[storyParams.language];
+        // console.log(storyParams);
+        // console.log(language);
+        const prompt = `${language.Header}${language.Length}${storyParams.longueur}${language.Age}${storyParams.ageCible}${language.Genre}${storyParams.themeHistoire}${language.MainCharacter}${storyParams.persoP.nom}, ${storyParams.persoP.age}, ${language.MainCharacterAge}${storyParams.persoP.personnalite}, ${storyParams.persoP.genre}.${language.Goal}${storyParams.defi}${language.Moral}${storyParams.morale}${language.Addition}${language.Items}${storyParams.elementsSupp.objets.join(", ")}${language.Encounters}${storyParams.elementsSupp.rencontres.join(", ")}`;
         
         console.log(prompt);
 
@@ -33,9 +24,9 @@ const complexStoryRequest = async (req, res) => {
             model: "gpt-4-turbo-preview",
         });
     
-        console.log(completion.choices[0]);
+        // console.log(completion.choices[0]);
         res.send(completion.choices[0].message.content); 
-
+        res.send(prompt);
     }catch(error){
         console.log(error);
         res.status(500).send("An error occured");
@@ -44,21 +35,13 @@ const complexStoryRequest = async (req, res) => {
 
 const simpleStoryRequest = async (req, res) => {
     try{
-        console.log(req)
-    const storyParams = req.body;
-    console.log(storyParams);
-    const prompt = `
-        Génére une histoire pour enfants suivant les critères suivants: \n
-        Longueur: ${storyParams.longueur} mots\n
-        Âge du public cible: ${storyParams.ageCible} ans\n
-        Genre de l'histoire: ${storyParams.themeHistoire}\n
-        Personnage principal: ${storyParams.persoP.nom}, ${storyParams.persoP.age
-        } ans, ${storyParams.persoP.personnalite}, ${storyParams.persoP.genre}\n
-        Ajoute un lecon de morale et des rencontres extraordinaires\n
-        Rédige cette histoire en ${storyParams.langue}\n
-        )}`;
+        // console.log(req)
+        const storyParams = req.body;
+        const language = lang[storyParams.language];
+        // console.log(storyParams);
+            const prompt = `${language.Header}${language.Length}${storyParams.longueur}${language.Age}${storyParams.ageCible}${language.Genre}${storyParams.themeHistoire}${language.MainCharacter}${storyParams.persoP.nom}, ${storyParams.persoP.age}, ${language.MainCharacterAge}${storyParams.persoP.personnalite}, ${storyParams.persoP.genre}, ${language.SimpleStoryEnd}`
         
-        console.log(prompt);
+        // console.log(prompt);
 
         const completion = await openai.chat.completions.create({
             messages: [{ role: "system", content: prompt }],

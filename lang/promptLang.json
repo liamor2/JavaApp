@@ -1,0 +1,30 @@
+{
+  "fr": {
+    "Header": "Génère une histoire pour enfants suivant les critères suivants: \n",
+    "Length": "Longueur: ",
+    "Age": "\nÂge du public cible: ",
+    "Genre": "ans\nGenre de l'histoire: ",
+    "MainCharacter": "\nPersonnage principal: ",
+    "MainCharacterAge": "ans, ",
+    "Goal": "\nProblème ou défi à surmonter: ",
+    "Moral": "\nLeçon ou morale: ",
+    "Addition": "\nÉléments supplémentaires:",
+    "Items": "\n- Objets magiques: ",
+    "Encounters": "\n- Rencontres extraordinaires:",
+    "SimpleStoryEnd": "\nAjoute un leçon de morale et des rencontres extraordinaires"
+  },
+  "en": {
+    "Header": "Generate a children's story based on the following criteria: \n",
+    "Length": "Length: ",
+    "Age": "\nTarget audience age: ",
+    "Genre": " years\nStory genre: ",
+    "MainCharacter": "\nMain character: ",
+    "MainCharacterAge": " years old, ",
+    "Goal": "\nProblem or challenge to overcome: ",
+    "Moral": "\nLesson or moral: ",
+    "Addition": "\nAdditional elements:",
+    "Items": "\n- Magical items: ",
+    "Encounters": "\n- Extraordinary encounters:",
+    "SimpleStoryEnd": "\nAdd a moral lesson and extraordinary encounters"
+  }
+}

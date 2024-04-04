@@ -4,7 +4,7 @@ import express from 'express';
 import router from './routes/routes.js';
 
 const app = express();
-const port = 3001;
+const port = 42424;
 
 app.use(express.json());
 
