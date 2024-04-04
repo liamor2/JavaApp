@@ -1,13 +1,18 @@
-require('dotenv').config()
-const express = require('express');
-const routes = require('./routes/routes');
+import dotenv from 'dotenv';
+dotenv.config();
+import express from 'express';
+import router from './routes/routes.js';
+
 const app = express();
 const port = 3001;
+
+app.use(express.json());
 
 
 
 // Utilisation des routes définies dans routes.js
-app.use('/', routes);
+app.use('/', router);
+
 
 
 // Démarrage du serveur
