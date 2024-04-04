@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">tuto</string>
+    <string name="button_label">Créer une nouvelle histoire</string>
+    <string name="logo">logo</string>
+    <string name="email">example@email.com</string>
+    <string name="psw">password</string>
+</resources>
