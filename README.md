@@ -67,3 +67,7 @@ Paramètres exemples de simpleStory:
 
 Ces requetes prennent les paramètres de l'histoire et les inserent dans un prompt transmis à un modèle GPT-4 pour générer une histoire.
 Le prompt est envoyé au modèle GPT par le bias de leur libraiire openai.
+
+Le serveur utilise un modèle de controleurs pour séparer les différentes routes et les fonctions associées afin de faciliter la maintenance et l'ajout de nouvelles routes.
+
+Les clés d'API d'openai sont stockées dans un fichier .env qui n'est pas versionné pour des raisons de sécurité. C'est aussi pourquoi on à décidé d'utiliser un serveur plutot que de faire les requètes directement depuis l'appli front-end.
