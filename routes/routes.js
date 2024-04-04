@@ -1,6 +1,6 @@
 import express from 'express';
 const router = express.Router();
-import { complexStoryRequest } from '../controllers/ApiController.js';
+import { complexStoryRequest, simpleStoryRequest } from '../controllers/storyController.js';
 
 
 // Définition de la route principale
@@ -9,5 +9,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/api/complex', complexStoryRequest);
+router.post('/api/simple', simpleStoryRequest);
 
 export default router;
