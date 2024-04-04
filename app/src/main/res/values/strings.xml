@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">jsp</string>
     <string name="Home_button">Créer une nouvelle histoire</string>
+    <string name="Type_simple">Simple</string>
+    <string name="Type_avance">Avancé</string>
+    <string name="Text_type">Personnalisation</string>
+    <string name="themeavance_button3">Pirates</string>
+    <string name="themeavance_button4">Super-héros</string>
+    <string name="themeavance_button5">Mysthologie</string>
+    <string name="themeavance_button6">Magie</string>
+    <string name="themeavance_button7">Espace</string>
+    <string name="themeavance_button8">Princesse</string>
+    <string name="themeavance_button9">Confirmer</string>
+    <string name="retour">Retour</string>
+    <string name="Themeavance">Theme avancé</string>
+
+
 </resources>
