@@ -70,7 +70,7 @@ const simpleStoryRequest = async (req, res) => {
 
     }catch(error){
         console.log(error);
-        res.status(500).send("An error occured");
+        res.status(500).send("An error occurred");
     }
 };
 
