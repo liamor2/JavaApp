@@ -13,6 +13,11 @@
     <string name="themeavance_button9">Confirmer</string>
     <string name="retour">Retour</string>
     <string name="Themeavance">Theme avancé</string>
+    <string name="longueurdelhistoir">Longueur de l'histoire</string>
+    <string name="longueur_court">Court</string>
+    <string name="longueur_moyen">Moyen</string>
+    <string name="longueur_Long">Long</string>
+    
 
 
 </resources>
