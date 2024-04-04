@@ -12,8 +12,8 @@ const complexStoryRequest = async (req, res) => {
     const storyParams = req.body;
     console.log(storyParams);
     const prompt = `
-        Généré une histoire pour enfants suivant les critères suivants: \n
-        Longueur: 250 mots\n
+        Génére une histoire pour enfants suivant les critères suivants: \n
+        Longueur: ${storyParams.longueur}\n
         Âge du public cible: ${storyParams.ageCible} ans\n
         Genre de l'histoire: ${storyParams.themeHistoire}\n
         Personnage principal: ${storyParams.persoP.nom}, ${storyParams.persoP.age
@@ -48,13 +48,14 @@ const simpleStoryRequest = async (req, res) => {
     const storyParams = req.body;
     console.log(storyParams);
     const prompt = `
-        Généré une histoire pour enfants suivant les critères suivants: \n
-        Longueur: 250 mots\n
+        Génére une histoire pour enfants suivant les critères suivants: \n
+        Longueur: ${storyParams.longueur} mots\n
         Âge du public cible: ${storyParams.ageCible} ans\n
         Genre de l'histoire: ${storyParams.themeHistoire}\n
         Personnage principal: ${storyParams.persoP.nom}, ${storyParams.persoP.age
         } ans, ${storyParams.persoP.personnalite}, ${storyParams.persoP.genre}\n
-        Ajoute un leçon de morale et des rencontres extraordinaires\n
+        Ajoute un lecon de morale et des rencontres extraordinaires\n
+        Rédige cette histoire en ${storyParams.langue}\n
         )}`;
         
         console.log(prompt);
