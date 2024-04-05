@@ -1,4 +1,15 @@
-# JavaApp
+# StoryTime API
+
+## Installation
+
+Clonez le repo, naviez à la racine et installez les dépendances avec `npm install`
+Faire tourner le server avec `npm start .\app.js` pour un server statique ou `nodemon .\app.js` pour un server dynamique.
+Le serveur tourne sur le port 42424 par défaut.
+
+## Contributeurs
+
+- Samuel VERGNOL
+- Liam Gattegno
 
 ## Description
 
@@ -71,3 +82,5 @@ Le prompt est envoyé au modèle GPT par le bias de leur libraiire openai.
 Le serveur utilise un modèle de controleurs pour séparer les différentes routes et les fonctions associées afin de faciliter la maintenance et l'ajout de nouvelles routes.
 
 Les clés d'API d'openai sont stockées dans un fichier .env qui n'est pas versionné pour des raisons de sécurité. C'est aussi pourquoi on à décidé d'utiliser un serveur plutot que de faire les requètes directement depuis l'appli front-end.
+
+Les requetes sont aussi documentées avec swagger sur /api-docs.

@@ -9,7 +9,7 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const complexStoryRequest = async (req, res) => {
     try{
-        // console.log(req)
+        console.log(req)
         const storyParams = req.body;
         if (storyParams.language === undefined) {
             storyParams.language = "en";
