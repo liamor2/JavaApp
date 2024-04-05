@@ -31,6 +31,6 @@
     "Items": "\n- Magical items: ",
     "Encounters": "\n- Extraordinary encounters:",
     "SimpleStoryEnd": "\nAdd a moral lesson and extraordinary encounters",
-    "ImagePrompt": "Create an image  to illustrate this story. Pastel color. Childish. Full vertical ratio. No text in the image. No text over the image. Only illustrations."
+    "ImagePrompt": "Create an image that fits situation. Pastel color. Full vertical ratio."
   }
 }
