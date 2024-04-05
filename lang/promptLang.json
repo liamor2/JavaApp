@@ -5,13 +5,16 @@
     "Age": "\nÂge du public cible: ",
     "Genre": "ans\nGenre de l'histoire: ",
     "MainCharacter": "\nPersonnage principal: ",
-    "MainCharacterAge": "ans, ",
+    "CharacterAge": "ans, ",
+    "SecondaryCharacter": "\nPersonnages secondaire: ",
+    "SecondaryCharacterRole": " qui est ",
     "Goal": "\nProblème ou défi à surmonter: ",
     "Moral": "\nLeçon ou morale: ",
     "Addition": "\nÉléments supplémentaires:",
     "Items": "\n- Objets magiques: ",
     "Encounters": "\n- Rencontres extraordinaires:",
-    "SimpleStoryEnd": "\nAjoute un leçon de morale et des rencontres extraordinaires"
+    "SimpleStoryEnd": "\nAjoute un leçon de morale et des rencontres extraordinaires",
+    "ImagePrompt": "Crée une image pour illustrer cette histoire. Couleurs pastel. Ratio vertical complet. L'image ne doit pas contenir de texte. Aucun texte par dessus l'image. Uniquement des illustrations."
   },
   "en": {
     "Header": "Generate a children's story based on the following criteria: \n",
@@ -19,12 +22,15 @@
     "Age": "\nTarget audience age: ",
     "Genre": " years\nStory genre: ",
     "MainCharacter": "\nMain character: ",
-    "MainCharacterAge": " years old, ",
+    "CharacterAge": " years old, ",
+    "SecondaryCharacter": "\nSecondary character: ",
+    "SecondaryCharacterRole": " who is ",
     "Goal": "\nProblem or challenge to overcome: ",
     "Moral": "\nLesson or moral: ",
     "Addition": "\nAdditional elements:",
     "Items": "\n- Magical items: ",
     "Encounters": "\n- Extraordinary encounters:",
-    "SimpleStoryEnd": "\nAdd a moral lesson and extraordinary encounters"
+    "SimpleStoryEnd": "\nAdd a moral lesson and extraordinary encounters",
+    "ImagePrompt": "Create an image  to illustrate this story. Pastel color. Childish. Full vertical ratio. No text in the image. No text over the image. Only illustrations."
   }
 }
