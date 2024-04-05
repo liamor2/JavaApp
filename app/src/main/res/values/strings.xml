@@ -12,12 +12,24 @@
     <string name="themeavance_button8">Princesse</string>
     <string name="themeavance_button9">Confirmer</string>
     <string name="retour">Retour</string>
-    <string name="Themeavance">Theme avancé</string>
-    <string name="longueurdelhistoir">Longueur de l'histoire</string>
+    <string name="Themeavance">Thème</string>
+    <string name="longueurdelhistoir">Longueur de l histoire</string>
     <string name="longueur_court">Court</string>
     <string name="longueur_moyen">Moyen</string>
     <string name="longueur_Long">Long</string>
-    
-
-
+    <string name="Text_age">Paramètres avancés</string>
+    <string name="text">Age cible</string>
+    <string name="text1">Nom</string>
+    <string name="text2">Age</string>
+    <string name="text3">Genre</string>
+    <string name="text4">Personnalité</string>
+    <string name="button_secondaire">Ajouter un personnage secondaire</string>
+    <string name="textele5">Éléments supplémentaires</string>
+    <string name="text5">Objets magiques</string>
+    <string name="button_magie">Ajouter un objet magique</string>
+    <string name="text6">Rencontres</string>
+    <string name="Button">Ajouter une rencontre</string>
+    <string name="text7">Défis</string>
+    <string name="text8">Morale</string>
+    <string name="button_generer">Générer</string>
 </resources>
