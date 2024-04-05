@@ -2,7 +2,10 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "openai": "^4.0.0"
+    "openai": "^4.0.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "yamljs": "^0.3.0"
   },
   "name": "javaapp",
   "description": "Node serer for storytelling app",
