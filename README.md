@@ -54,6 +54,8 @@ Paramètres exemples de complexStory:
             ],
         },
         longueur: 250
+        language:"fr",
+        images: true
     }
 ```
 
