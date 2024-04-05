@@ -24,6 +24,8 @@ router.get('/', (req, res) => {
  *                 type: string
  *               longueur:
  *                 type: string
+ *               image:
+ *                type: boolean
  *               ageCible:
  *                 type: string
  *               themeHistoire:
@@ -78,6 +80,8 @@ router.post('/api/complex', complexStoryRequest);
  *                 type: string
  *               longueur:
  *                 type: string
+ *               image:
+ *                type: boolean
  *               ageCible:
  *                 type: string
  *               themeHistoire:
@@ -109,6 +113,30 @@ router.post('/api/complex', complexStoryRequest);
 
 
 router.post('/api/simple', simpleStoryRequest);
+
+/**
+ * @swagger
+ * /api/tts:
+ *   post:
+ *     summary: Converts text to speech
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               text:
+ *                 type: string
+ *               voiceID:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Successfully converted text to speech
+ *       500:
+ *         description: An error occurred
+ */
+
 router.post('/api/tts', speechToText);
 
 
