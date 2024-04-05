@@ -7,7 +7,6 @@ dotenv.config();
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-
 const complexStoryRequest = async (req, res) => {
     try{
         // console.log(req)
